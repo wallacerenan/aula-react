@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #141414;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 26px 0;
+}
+
+li {
+    list-style: none;
+}
+
+@media (min-width: 600px) {
+    .container {
+        padding: 0 4%;
+    }
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-content li {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.header-content li a.active {
+    font-weight: 900;
+    cursor: default;
+}
+
+.header-content li a {
+    font-weight: 400;
+    transition: color 0.25s ease-out;
+    color: #e5e5e5;
+}
+
+.header-content li a.active {
+    font-weight: 900;
+    cursor: default;
+    color: #fff;
+}
+
+.header-content li a:hover:not(.active) {
+    color: #b3b3b3;
+}
+
+.featured-movie {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(20, 20, 20, 1) 100%), url('assets/images/featured-movie.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.movie-description p {
+    margin: 20px 0;
+}
+
+.movie-description {
+    width: 50%;
+    max-width: 800px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button :first-of-type {
+    margin-right: 10px;
+}
+
+.button {
+    height: 57px;
+    padding: 0 20px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.buttons button:first-of-type {
+    margin-right: 20px;
+}
+
+.button.secondary {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.movies-category {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.movies-list {
+    display: flex;
+    /* overflow-x: scroll; */
+}
+
+.movies-category h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.margin-negative {
+    margin-top: -100px;
+}
+
+.movies-list::-webkit-scrollbar {
+    /* display: none; */
+}
+
+.movies-list img {
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 250ms ease-out;
+}
+
+.movies-list img:hover {
+    transform: scale(1.05);
+}
